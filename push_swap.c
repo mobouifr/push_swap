@@ -6,13 +6,13 @@
 /*   By: mobouifr <mobouifr@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/08/20 19:02:08 by mobouifr          #+#    #+#             */
-/*   Updated: 2024/08/21 18:19:27 by mobouifr         ###   ########.fr       */
+/*   Updated: 2024/08/29 17:43:12 by mobouifr         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "push_swap.h"
 
-void	sort(int num_count, long *all_nums)
+void	sort(int num_count, int *all_nums)
 {
 	t_list	*stack_a;
 	t_list	*stack_b;
@@ -35,10 +35,9 @@ void	sort(int num_count, long *all_nums)
 
 int	main(int argc, char *argv[])
 {
-	int		num_count;
-	long	*all_nums;
+	int	num_count;
+	int	*all_nums;
 
-	all_nums = NULL;
 	if (argc < 2)
 		return (0);
 	if (string_isempty(argc, argv))
@@ -47,7 +46,7 @@ int	main(int argc, char *argv[])
 		return (1);
 	}
 	num_count = count_input_numbers(argc, argv);
-	all_nums = (long *)malloc(sizeof(long) * num_count);
+	all_nums = malloc(sizeof(int) * num_count);
 	if (all_nums == NULL)
 	{
 		write(2, "Error\n", 6);

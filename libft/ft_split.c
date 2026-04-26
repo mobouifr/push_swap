@@ -6,7 +6,7 @@
 /*   By: mobouifr <mobouifr@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/24 09:50:39 by mobouifr          #+#    #+#             */
-/*   Updated: 2024/08/26 15:06:40 by mobouifr         ###   ########.fr       */
+/*   Updated: 2024/08/29 13:22:23 by mobouifr         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -102,22 +102,3 @@ char	**ft_split(char const *s, char c)
 	ptr[i] = NULL;
 	return (ptr);
 }
-/*
- int	main(void)
- {
-	char const    *input_string;
-	char        **result;
-	int            i;
-
-	input_string = "lkhdra";
-
-	result = ft_split(input_string, NULL);
-	i = 0;
-	while (result[i])
-	{
-		printf("%s\n", result[i]);
-		i++;
-	}
-	system("leaks a.out");
-	return (0);
- }*/

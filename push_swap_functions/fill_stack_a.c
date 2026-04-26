@@ -6,13 +6,13 @@
 /*   By: mobouifr <mobouifr@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/08/20 17:55:21 by mobouifr          #+#    #+#             */
-/*   Updated: 2024/08/20 22:11:30 by mobouifr         ###   ########.fr       */
+/*   Updated: 2024/08/29 17:47:45 by mobouifr         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../push_swap.h"
 
-void	fill_stack_a(t_list **stack_a, long *all_nums, int num_count)
+void	fill_stack_a(t_list **stack_a, int *all_nums, int num_count)
 {
 	int	i;
 

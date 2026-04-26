@@ -6,7 +6,7 @@
 /*   By: mobouifr <mobouifr@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/08/20 22:13:14 by mobouifr          #+#    #+#             */
-/*   Updated: 2024/08/26 15:15:43 by mobouifr         ###   ########.fr       */
+/*   Updated: 2024/08/29 17:45:49 by mobouifr         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -48,7 +48,7 @@ int	string_isempty(int argc, char **argv)
 	return (0);
 }
 
-void	check_doubles(int num_count, long *all_nums)
+void	check_doubles(int num_count, int *all_nums)
 {
 	int	j;
 	int	i;
@@ -95,12 +95,12 @@ int	count_input_numbers(int argc, char *argv[])
 	return (num_count);
 }
 
-void	pars_checks(int argc, char **argv, long *all_nums)
+void	pars_checks(int argc, char **argv, int *all_nums)
 {
 	int		j;
 	int		i;
 	int		k;
-	long	num;
+	int		num;
 	char	**str;
 
 	j = 1;

@@ -6,7 +6,7 @@
 /*   By: mobouifr <mobouifr@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/08/20 19:05:29 by mobouifr          #+#    #+#             */
-/*   Updated: 2024/08/21 17:19:29 by mobouifr         ###   ########.fr       */
+/*   Updated: 2024/08/29 17:44:41 by mobouifr         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,9 +32,9 @@ typedef struct s_list
 
 //.....PARSE FUNCTIONS.....//
 void				ft_free(char **str);
-void				check_doubles(int count, long *nums);
+void				check_doubles(int count, int *nums);
 int					count_input_numbers(int argc, char *argv[]);
-void				pars_checks(int argc, char **argv, long *all_nums);
+void				pars_checks(int argc, char **argv, int *all_nums);
 int					string_isempty(int argc, char **argv);
 
 /////////////////////////..OPEARATIONS..///////////////////////////
@@ -73,7 +73,7 @@ void				ft_lstclear(t_list **lst);
 /////////////////////..PUSH_SWAP_FUNCTIONS../////////////////////
 void				check_lowestnum(t_list **stack_a);
 void				update_index(t_list **stack);
-void				fill_stack_a(t_list **stack_a, long *all_nums,
+void				fill_stack_a(t_list **stack_a, int *all_nums,
 						int num_count);
 void				find_price(t_list *stack_a, t_list *stack_b, t_list **node);
 void				node_positioning_a(t_list **stack_a, t_list **stack_b,

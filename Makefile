@@ -27,7 +27,7 @@ SRC = push_swap.c \
 	  ./push_swap_functions/sorting_functions.c
 OBJ = $(SRC:.c=.o)
 CC = cc
-CFLAGS = -Wall -Wextra -Werror -g3 #-fsanitize=address
+CFLAGS = -Wall -Wextra -Werror #-g3 -fsanitize=address
 
 all: $(NAME)
 
