@@ -1,0 +1,14 @@
+# Build artifacts
+*.o
+*.a
+
+# Project binaries
+push_swap
+checker
+
+# Logs
+*.log
+
+# Editor/system files
+.vscode/
+.DS_Store
